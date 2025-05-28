@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mapa s Clustrami</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script>
+  // Tvoj token
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZGx0eW5pIiwiYSI6ImNsbG01dGFmOTAwZnIza29nMDRhOXM4cTcifQ.BkZTsvw8Z5hBGe3hNnkfQg';
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v11',
+    center: [17.1, 48.15], // centrum mapy
+    zoom: 4
+  });
+
+  map.on('load', () => {
+    // Pridaj geojson dáta
+    map.addSource('places', {
+      type: 'geojson',
+      data: 'data.json',
+      cluster: true,
+      clusterMaxZoom: 14, 
+      clusterRadius: 50
+    });
+
+    // Zobraz klastre
+    map.addLayer({
+      id: 'clusters',
+      type: 'circle',
+      source: 'places',
+      filter: ['has', 'point_count'],
+      paint: {
+        'circle-color': '#007cbf',
+        'circle-radius': ['step', ['get', 'point_count'], 15, 10, 20, 30, 25]
+      }
+    });
+
+    // Počet bodov v klastri
+    map.addLayer({
+      id: 'cluster-count',
+      type: 'symbol',
+      source: 'places',
+      filter: ['has', 'point_count'],
+      layout: {
+        'text-field': '{point_count_abbreviated}',
+        'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+        'text-size': 14
+      }
+    });
+
+    // Samostatné body
+    map.addLayer({
+      id: 'unclustered-point',
+      type: 'circle',
+      source: 'places',
+      filter: ['!', ['has', 'point_count']],
+      paint: {
+        'circle-color': '#f28cb1',
+        'circle-radius': 6
+      }
+    });
+  });
+</script>
+</body>
+</html>
