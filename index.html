@@ -50,8 +50,12 @@
         'circle-radius': [
           'step',
           ['get', 'point_count'],
-          20, 10, 25, 30, 32, 50, 36
-        ],
+          30,     // pre <= 10 bodov
+          10, 40, // pre 11–30 bodov
+          30, 50, // pre 31–50 bodov
+          50, 60  // pre viac bodov
+        ]
+
         'circle-stroke-color': '#ffffff',
         'circle-stroke-width': 3,
         'circle-blur': 0.2
