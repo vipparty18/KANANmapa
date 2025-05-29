@@ -40,8 +40,14 @@
     container: 'map',
     style: 'mapbox://styles/tlstymacek/cmb9ali7c007c01si2cb6ecwz',
     center: [15.5, 48.5],
-    zoom: 5.7
+    zoom: 5.5
   });
+
+  map.once('idle', () => {
+    document.body.style.visibility = 'visible'; // Zobrazenie mapy po načítaní
+  });
+
+  document.body.style.visibility = 'hidden'; // Skrytie mapy pred načítaním
 
   map.on('load', () => {
     map.addSource('kanan-data', {
@@ -61,16 +67,16 @@
         'circle-color': [
           'step',
           ['get', 'point_count'],
-          '#7BC8F6', // svetlá modrá
-          10, '#3799C5', // stredná modrá
-          30, '#1E6F92' // tmavá modrá
+          '#FF6B6B',
+          10, '#FF4C4C',
+          30, '#B22222'
         ],
         'circle-radius': [
           'step',
           ['get', 'point_count'],
-          20,
-          10, 30,
-          30, 40
+          15,
+          10, 25,
+          30, 35
         ],
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff'
@@ -98,7 +104,7 @@
       source: 'kanan-data',
       filter: ['!', ['has', 'point_count']],
       paint: {
-        'circle-color': '#0668A0',
+        'circle-color': '#1E90FF',
         'circle-radius': 10,
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff'
