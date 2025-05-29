@@ -23,10 +23,10 @@
       max-width: 2000px;
     }
     .mapboxgl-popup-content {
-      min-width: 600px;
-      max-width: 1800px;
-      display: block;
-      padding: 10px 15px;
+      display: inline-block;
+      min-width: 200px;           /* nech nie je príliš úzky */
+      width: fit-content;         /* magický flex sizing */
+      padding: 15px 20px;
       background-color: white;
       border-radius: 10px;
       white-space: normal;
