@@ -2,97 +2,179 @@
 <html lang="sk">
 <head>
   <meta charset="utf-8" />
-  <title>Mapa KANAN – Leaflet verzia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Mapa KANAN2</title>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
   <style>
-    html, body, #map {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      font-family: 'Arial', sans-serif;
     }
-
-    * {
-      box-sizing: border-box;
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
     }
-
-    /* Vlastné clustre */
-    .marker-cluster {
-      background-color: #327FC7 !important;
-      border: 3px solid #0668A0 !important;
-      color: white !important;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      font-size: 18px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transform: scale(1.2);
+    .mapboxgl-popup {
+      font-size: 70px;
+      max-width: 2000px;
+    }
+    .mapboxgl-popup-content {
+      display: inline-block;
+      min-width: 200px;           /* nech nie je príliš úzky */
+      width: fit-content;         /* magický flex sizing */
+      padding: 15px 20px;
+      background-color: white;
+      border-radius: 10px;
+      white-space: normal;
+      line-height: 1.4;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
   </style>
 </head>
 <body>
+
 <div id="map"></div>
 
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-
 <script>
-  async function initMap() {
-    const response = await fetch('https://vipparty18.github.io/KANANmapa/data.json');
-    const data = await response.json();
+  mapboxgl.accessToken = 'pk.eyJ1IjoidGxzdHltYWNlayIsImEiOiJjbWI4ZHdlbG0wNWI4MmpzOGc1ZjZ5OGJpIn0.KVMITbcIPieD_K6vRnw4TA';
 
-    const map = L.map('map').setView([48.5, 15.5], 7);
+  const isMobile = window.innerWidth <= 768;
 
-    // Carto Light podkladová mapa (bez názvov)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CARTO',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(map);
+  const clusterRadius = isMobile ? 70 : 140;
+  const clusterCircleSizes = isMobile
+    ? [30, 60, 90]
+    : [60, 120, 150];
 
-    // Cluster skupina s vlastným dizajnom
-    const markers = L.markerClusterGroup({
-      iconCreateFunction: function (cluster) {
-        return L.divIcon({
-          html: `<div>${cluster.getChildCount()}</div>`,
-          className: 'marker-cluster',
-          iconSize: [60, 60],
-          iconAnchor: [30, 30],
-          popupAnchor: [0, -30]
+  const clusterTextSizes = isMobile
+    ? [24, 32, 40]
+    : [80, 105, 120];
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/tlstymacek/cmb9ali7c007c01si2cb6ecwz',
+    center: [15.5, 48.5],
+    zoom: 6.5
+  });
+
+  map.once('idle', () => {
+    document.body.style.visibility = 'visible';
+  });
+
+  document.body.style.visibility = 'hidden';
+
+  map.on('load', () => {
+    map.addSource('kanan-data', {
+      type: 'geojson',
+      data: 'https://vipparty18.github.io/KANANmapa/data.json',
+      cluster: true,
+      clusterMaxZoom: 12,
+      clusterRadius: clusterRadius
+    });
+
+    map.addLayer({
+      id: 'clusters',
+      type: 'circle',
+      source: 'kanan-data',
+      filter: ['has', 'point_count'],
+      paint: {
+        'circle-color': [
+          'step',
+          ['get', 'point_count'],
+          '#FF6B6B',
+          10, '#FF4C4C',
+          30, '#B22222'
+        ],
+        'circle-radius': [
+          'step',
+          ['get', 'point_count'],
+          clusterCircleSizes[0],
+          10, clusterCircleSizes[1],
+          85, clusterCircleSizes[2]
+        ],
+        'circle-stroke-width': 4,
+        'circle-stroke-color': '#ffffff'
+      }
+    });
+
+    map.addLayer({
+      id: 'cluster-count',
+      type: 'symbol',
+      source: 'kanan-data',
+      filter: ['has', 'point_count'],
+      layout: {
+        'text-field': '{point_count_abbreviated}',
+        'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+        'text-size': [
+          'step',
+          ['get', 'point_count'],
+          clusterTextSizes[0],
+          10, clusterTextSizes[1],
+          85, clusterTextSizes[2]
+        ]
+      },
+      paint: {
+        'text-color': '#ffffff'
+      }
+    });
+
+    map.addLayer({
+      id: 'unclustered-point',
+      type: 'circle',
+      source: 'kanan-data',
+      filter: ['!', ['has', 'point_count']],
+      paint: {
+        'circle-color': '#1E90FF',
+        'circle-radius': isMobile ? 20 : 40,
+        'circle-stroke-width': 2,
+        'circle-stroke-color': '#ffffff'
+      }
+    });
+
+    map.on('click', 'clusters', (e) => {
+      const features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
+      const clusterId = features[0].properties.cluster_id;
+      map.getSource('kanan-data').getClusterExpansionZoom(clusterId, (err, zoom) => {
+        if (err) return;
+
+        map.easeTo({
+          center: features[0].geometry.coordinates,
+          zoom: zoom
         });
-      }
+      });
     });
 
-    const geoLayer = L.geoJSON(data, {
-      pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, {
-          radius: 12,
-          fillColor: "#0668A0",
-          color: "#ffffff",
-          weight: 2,
-          opacity: 1,
-          fillOpacity: 0.9
-        }).bindPopup(`
-          <strong>${feature.properties.meno} ${feature.properties.priezvisko}</strong><br>
-          ${feature.properties.mesto}<br>
-          ${feature.properties.email}
-        `);
-      }
+    map.on('click', 'unclustered-point', (e) => {
+      const props = e.features[0].properties;
+      const popupContent = `<strong>${props.meno} ${props.priezvisko}</strong><br>${props.mesto}<br>${props.email}`;
+
+      new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(popupContent)
+        .addTo(map);
     });
 
-    markers.addLayer(geoLayer);
-    map.addLayer(markers);
-  }
+    map.on('mouseenter', 'clusters', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
 
-  initMap();
+    map.on('mouseleave', 'clusters', () => {
+      map.getCanvas().style.cursor = '';
+    });
+
+    map.on('mouseenter', 'unclustered-point', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'unclustered-point', () => {
+      map.getCanvas().style.cursor = '';
+    });
+  });
 </script>
+
+
 </body>
 </html>
