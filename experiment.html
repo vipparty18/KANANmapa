@@ -24,8 +24,8 @@
     }
     .mapboxgl-popup-content {
       display: inline-block;
-      min-width: 200px;           /* nech nie je príliš úzky */
-      width: fit-content;         /* magický flex sizing */
+      min-width: 200px;
+      width: fit-content;
       padding: 15px 20px;
       background-color: white;
       border-radius: 10px;
@@ -44,14 +44,14 @@
 
   const isMobile = window.innerWidth <= 768;
 
-  const clusterRadius = isMobile ? 70 : 140;
+  const clusterRadius = isMobile ? 50 : 140;
   const clusterCircleSizes = isMobile
-    ? [30, 60, 90]
+    ? [16, 22, 28]
     : [60, 120, 150];
 
   const clusterTextSizes = isMobile
-    ? [24, 32, 40]
-    : [80, 105, 120];
+    ? [10, 12, 14]
+    : [80, 100, 120];
 
   const map = new mapboxgl.Map({
     container: 'map',
@@ -93,7 +93,7 @@
           ['get', 'point_count'],
           clusterCircleSizes[0],
           10, clusterCircleSizes[1],
-          85, clusterCircleSizes[2]
+          30, clusterCircleSizes[2]
         ],
         'circle-stroke-width': 4,
         'circle-stroke-color': '#ffffff'
@@ -113,7 +113,7 @@
           ['get', 'point_count'],
           clusterTextSizes[0],
           10, clusterTextSizes[1],
-          85, clusterTextSizes[2]
+          30, clusterTextSizes[2]
         ]
       },
       paint: {
@@ -128,7 +128,7 @@
       filter: ['!', ['has', 'point_count']],
       paint: {
         'circle-color': '#1E90FF',
-        'circle-radius': isMobile ? 20 : 40,
+        'circle-radius': isMobile ? 10 : 20,
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff'
       }
@@ -174,7 +174,6 @@
     });
   });
 </script>
-
 
 </body>
 </html>
