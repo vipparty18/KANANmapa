@@ -19,13 +19,15 @@
       width: 100%;
     }
     .mapboxgl-popup {
-      font-size: 70px; /* Zvýšená veľkosť písma */
-      transform: scale(7); /* Zvýšená veľkosť celého popupu */
+      font-size: 16px; /* Normálna veľkosť písma */
+      max-width: 300px; /* Zabráni príliš širokým popupom */
     }
+    
     .mapboxgl-popup-content {
       text-align: center;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      word-break: break-word; /* Rozbije dlhé slová ako emaily */
     }
   </style>
 </head>
