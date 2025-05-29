@@ -54,8 +54,8 @@
       type: 'geojson',
       data: 'https://vipparty18.github.io/KANANmapa/data.json',
       cluster: true,
-      clusterMaxZoom: 11,
-      clusterRadius: 130
+      clusterMaxZoom: 12,
+      clusterRadius: 150
     });
 
     map.addLayer({
@@ -96,7 +96,7 @@
         ['get', 'point_count'],
         60,     // pre <10
         10, 60, // 10–29
-        85, 70  // 30+
+        85, 120  // 30+
       ]
       },
       paint: {
