@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <title>Mapa KANAN – Leaflet verzia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+  <style>
+    html, body, #map {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Vlastné clustre */
+    .marker-cluster {
+      background-color: #327FC7 !important;
+      border: 3px solid #0668A0 !important;
+      color: white !important;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+<script>
+  const map = L.map('map').setView([48.5, 15.5], 7);
+
+  // Carto Light podkladová mapa (bez názvov)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CARTO',
+    subdomains: 'abcd',
+    maxZoom: 19
+  }).addTo(map);
+
+  // Cluster skupina s vlastným dizajnom
+  const markers = L.markerClusterGroup({
+    iconCreateFunction: function (cluster) {
+      return L.divIcon({
+        html: `<div>${cluster.getChildCount()}</div>`,
+        className: 'marker-cluster',
+        iconSize: [60, 60]
+      });
+    }
+  });
+
+  // Načítanie dát z GitHubu
+  fetch('https://vipparty18.github.io/KANANmapa/data.json')
+    .then(response => response.json())
+    .then(data => {
+      const geoLayer = L.geoJSON(data, {
+        pointToLayer: function (feature, latlng) {
+          return L.circleMarker(latlng, {
+            radius: 12,
+            fillColor: "#0668A0",
+            color: "#ffffff",
+            weight: 2,
+            opacity: 1,
+            fillOpacity: 0.9
+          }).bindPopup(`
+            <strong>${feature.properties.meno} ${feature.properties.priezvisko}</strong><br>
+            ${feature.properties.mesto}<br>
+            ${feature.properties.email}
+          `);
+        }
+      });
+
+      markers.addLayer(geoLayer);
+      map.addLayer(markers);
+    });
+</script>
+</body>
+</html>
