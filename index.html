@@ -74,9 +74,9 @@
         'circle-radius': [
           'step',
           ['get', 'point_count'],
-              30,     // namiesto 15
-          10, 40, // namiesto 25
-          30, 50  // namiesto 35
+            40,     // <10 bodov
+            10, 55, // 10–29 bodov
+            30, 80  // 30+ bodov
         ],
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff'
@@ -91,7 +91,7 @@
       layout: {
         'text-field': '{point_count_abbreviated}',
         'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-        'text-size': 14
+        'text-size': 22
       },
       paint: {
         'text-color': '#ffffff'
