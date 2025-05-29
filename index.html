@@ -16,11 +16,11 @@
 <div id="map"></div>
 
 <script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoidGxzdHltYWNlayIsImEiOiJjbWI4ZHdlbG0wNWI4MmpzOGc1ZjZ5OGJpIn0.KVMITbcIPieD_K6vRnw4TA'; // ← sem daj tvoj token
+  mapboxgl.accessToken = 'pk.eyJ1IjoidGxzdHltYWNlayIsImEiOiJjbWI4ZHdlbG0wNWI4MmpzOGc1ZjZ5OGJpIn0.KVMITbcIPieD_K6vRnw4TA';
 
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/tlstymacek/cmb8fap8z00tb01pa08pa0rg6', // ← tvoj štýl
+    style: 'mapbox://styles/tlstymacek/cmb8fap8z00tb01pa08pa0rg6',
     center: [17.1077, 48.1486],
     zoom: 5
   });
@@ -28,7 +28,7 @@
   map.on('load', () => {
     map.addSource('kanan-data', {
       type: 'geojson',
-      data: 'https://vipparty18.github.io/KANANmapa/data.json', // ← uprav link na svoj GitHub RAW JSON
+      data: 'https://vipparty18.github.io/KANANmapa/data.json',
       cluster: true,
       clusterMaxZoom: 14,
       clusterRadius: 50
@@ -40,16 +40,21 @@
       source: 'kanan-data',
       filter: ['has', 'point_count'],
       paint: {
-        'circle-color': '#327FC7',         // svetlomodrý kruh
-        'circle-stroke-color': '#0668A0',  // tmavomodrý obrys
-        'circle-stroke-width': 3,          // hrúbka obrysu
+        'circle-color': [
+          'step',
+          ['get', 'point_count'],
+          '#6BB9F0',  // svetlomodrá pre málo bodov
+          10, '#3A8DCC', // stredná
+          30, '#2A70A2' // tmavšia
+        ],
         'circle-radius': [
           'step',
           ['get', 'point_count'],
-          20,  // radius pre clustre s <10 bodmi
-          10, 25,   // radius pre 10–29
-          30, 30    // radius pre 30+
-        ]
+          20, 10, 25, 30, 32, 50, 36
+        ],
+        'circle-stroke-color': '#ffffff',
+        'circle-stroke-width': 3,
+        'circle-blur': 0.2
       }
     });
 
@@ -60,15 +65,15 @@
       filter: ['has', 'point_count'],
       layout: {
         'text-field': '{point_count_abbreviated}',
-        'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-        'text-size': 12,
-        'text-allow-overlap': true
+        'text-font': ['Arial Unicode MS Bold'],
+        'text-size': 14,
+        'text-allow-overlap': true,
+        'text-ignore-placement': true
       },
       paint: {
-        'text-color': '#FFFFFF'  // biely text
+        'text-color': '#FFFFFF'
       }
     });
-
 
     map.addLayer({
       id: 'unclustered-point',
@@ -76,17 +81,15 @@
       source: 'kanan-data',
       filter: ['!', ['has', 'point_count']],
       paint: {
-        'circle-color': '#0668A0',        // tmavomodrý bod
+        'circle-color': '#0668A0',
         'circle-radius': 6,
         'circle-stroke-width': 2,
+        'circle-stroke-color': '#ffffff'
       }
     });
 
-    // Zoom na kliknutie na cluster
     map.on('click', 'clusters', (e) => {
-      const features = map.queryRenderedFeatures(e.point, {
-        layers: ['clusters']
-      });
+      const features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
       const clusterId = features[0].properties.cluster_id;
       map.getSource('kanan-data').getClusterExpansionZoom(clusterId, (err, zoom) => {
         if (err) return;
@@ -97,7 +100,6 @@
       });
     });
 
-    // Popup na jednotlivý bod
     map.on('click', 'unclustered-point', (e) => {
       const props = e.features[0].properties;
       const popupText = `<strong>${props.meno} ${props.priezvisko}</strong><br>${props.mesto}<br>${props.email}`;
