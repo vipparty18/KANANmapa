@@ -128,7 +128,14 @@
       filter: ['!', ['has', 'point_count']],
       paint: {
         'circle-color': '#1E90FF',
-        'circle-radius': isMobile ? 10 : 20,
+        'circle-radius': [
+          'interpolate',
+          ['linear'],
+          ['mod', ['to-number', ['get', 'animationFrame']], 100],
+          0, isMobile ? 20 : 40,
+          50, isMobile ? 24 : 44,
+          100, isMobile ? 20 : 40
+        ],
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff'
       }
