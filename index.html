@@ -40,7 +40,9 @@
       source: 'kanan-data',
       filter: ['has', 'point_count'],
       paint: {
-        'circle-color': '#3E3E3E',
+        'circle-color': '#3399FF', // svetlomodrá farba kruhu
+        'circle-stroke-color': '#003366', // tmavomodrý obrys
+        'circle-stroke-width': 2, // hrúbka obrysu
         'circle-radius': [
           'step',
           ['get', 'point_count'],
