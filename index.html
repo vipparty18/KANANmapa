@@ -40,9 +40,9 @@
       source: 'kanan-data',
       filter: ['has', 'point_count'],
       paint: {
-        'circle-color': '#3399FF',         // svetlomodrý kruh
-        'circle-stroke-color': '#003366',  // tmavomodrý obrys
-        'circle-stroke-width': 2,          // hrúbka obrysu
+        'circle-color': '#327FC7',         // svetlomodrý kruh
+        'circle-stroke-color': '#0668A0',  // tmavomodrý obrys
+        'circle-stroke-width': 3,          // hrúbka obrysu
         'circle-radius': [
           'step',
           ['get', 'point_count'],
@@ -76,10 +76,9 @@
       source: 'kanan-data',
       filter: ['!', ['has', 'point_count']],
       paint: {
-        'circle-color': '#003366',        // tmavomodrý bod
+        'circle-color': '#0668A0',        // tmavomodrý bod
         'circle-radius': 6,
         'circle-stroke-width': 2,
-        'circle-stroke-color': '#3399FF'  // svetlomodrý obrys
       }
     });
 
