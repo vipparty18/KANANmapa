@@ -55,7 +55,7 @@
       data: 'https://vipparty18.github.io/KANANmapa/data.json',
       cluster: true,
       clusterMaxZoom: 14,
-      clusterRadius: 50
+      clusterRadius: 120
     });
 
     map.addLayer({
@@ -74,9 +74,9 @@
         'circle-radius': [
           'step',
           ['get', 'point_count'],
-          15,
-          10, 25,
-          30, 35
+              30,     // namiesto 15
+          10, 40, // namiesto 25
+          30, 50  // namiesto 35
         ],
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff'
