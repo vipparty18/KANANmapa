@@ -40,15 +40,15 @@
       source: 'kanan-data',
       filter: ['has', 'point_count'],
       paint: {
-        'circle-color': '#3399FF', // svetlomodrá farba kruhu
-        'circle-stroke-color': '#003366', // tmavomodrý obrys
-        'circle-stroke-width': 2, // hrúbka obrysu
+        'circle-color': '#3399FF',         // svetlomodrý kruh
+        'circle-stroke-color': '#003366',  // tmavomodrý obrys
+        'circle-stroke-width': 2,          // hrúbka obrysu
         'circle-radius': [
           'step',
           ['get', 'point_count'],
-          15,
-          10, 20,
-          30, 25
+          20,  // radius pre clustre s <10 bodmi
+          10, 25,   // radius pre 10–29
+          30, 30    // radius pre 30+
         ]
       }
     });
@@ -61,9 +61,14 @@
       layout: {
         'text-field': '{point_count_abbreviated}',
         'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-        'text-size': 12
+        'text-size': 12,
+        'text-allow-overlap': true
+      },
+      paint: {
+        'text-color': '#FFFFFF'  // biely text
       }
     });
+
 
     map.addLayer({
       id: 'unclustered-point',
@@ -71,10 +76,10 @@
       source: 'kanan-data',
       filter: ['!', ['has', 'point_count']],
       paint: {
-        'circle-color': '#000000',
+        'circle-color': '#003366',        // tmavomodrý bod
         'circle-radius': 6,
-        'circle-stroke-width': 1,
-        'circle-stroke-color': '#fff'
+        'circle-stroke-width': 2,
+        'circle-stroke-color': '#3399FF'  // svetlomodrý obrys
       }
     });
 
