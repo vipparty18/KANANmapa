@@ -24,7 +24,7 @@
     }
     .mapboxgl-popup-content {
       display: inline-block;
-      min-width: 200px;           /* nech nie je príliš úzky */
+      min-width: 300px;           /* nech nie je príliš úzky */
       width: fit-content;         /* magický flex sizing */
       padding: 15px 20px;
       background-color: white;
@@ -81,8 +81,8 @@
           'step',
           ['get', 'point_count'],
             60,     // <10 bodov
-            10, 120, // 10–85 bodov
-            85, 150  // 85+ bodov
+            10, 120, // 10–70 bodov
+            70, 150  // 85+ bodov
         ],
         'circle-stroke-width': 4,
         'circle-stroke-color': '#ffffff'
@@ -102,7 +102,7 @@
         ['get', 'point_count'],
         80,     // pre <10
         10, 105, // 10–29
-        85, 120  // 30+
+        70, 120  // 30+
       ]
       },
       paint: {
