@@ -139,7 +139,7 @@
 
     map.on('click', 'unclustered-point', (e) => {
       const props = e.features[0].properties;
-      const popupContent = `<strong>${props.meno} ${props.priezvisko}</strong><br>${props.mesto}<br>${props.email}`;
+      const popupContent = `<strong>${props.name} ${props.year}</strong><br>${props.place}`;
 
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
