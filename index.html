@@ -33,6 +33,11 @@
       line-height: 1.4;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
+    .nonbreaking {
+      white-space: nowrap;
+      overflow-wrap: normal;
+      word-break: keep-all;
+    }
   </style>
 </head>
 <body>
@@ -138,7 +143,7 @@
 
     map.on('click', 'unclustered-point', (e) => {
       const props = e.features[0].properties;
-      const popupContent = `<strong>${props.name}</strong><br>${props.year}<br>${props.place}`;
+      const popupContent = `<strong class="nonbreaking">${props.name}</strong><br>${props.year}<br>${props.place}`;
 
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
