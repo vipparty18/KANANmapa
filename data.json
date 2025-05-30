@@ -21,7 +21,7 @@
       "properties": {
         "name": "Aneta Juhaniaková",
         "year": "KAN 14 ",
-        "place": "Bayreuth"
+        "place": "Bayreuth/ Oxford"
       },
       "geometry": {
         "type": "Point",
@@ -936,7 +936,7 @@
       "properties": {
         "name": "Dominika Jurášová",
         "year": "KAN 13 ",
-        "place": "Edinburgh"
+        "place": "Edinburgh/ Bratislava"
       },
       "geometry": {
         "type": "Point",
@@ -1401,7 +1401,7 @@
       "properties": {
         "name": "Tomáš Soták",
         "year": "KAN 13 ",
-        "place": "Zvolen"
+        "place": "Zvolen/ Marseille"
       },
       "geometry": {
         "type": "Point",
@@ -1416,7 +1416,7 @@
       "properties": {
         "name": "Lukáš Žemla",
         "year": "KAN 14 ",
-        "place": "Zvolen"
+        "place": "Zvolen/ Marseille"
       },
       "geometry": {
         "type": "Point",
