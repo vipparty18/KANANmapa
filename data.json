@@ -1,0 +1,1445 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aymen Al Mandalawi",
+        "year": "KAN 14",
+        "place": "Amsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9041,
+          52.3676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aneta Juhaniaková",
+        "year": "KAN 14 ",
+        "place": "Bayreuth"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.578403359934951,
+          49.953720864770396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jakub Pajan",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10429702017691,
+          48.139920282828115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samuel Trizuljak",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10234238992329,
+          48.153677850093715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matúš Ďuraňa",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.104193910520067,
+          48.14945716991621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Daniela Hennelová",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.103415306176352,
+          48.148961953800494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michaela Tomaštíková",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10380534558799,
+          48.152682658987786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marián Janík​",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10488853449001,
+          48.15084214629513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anička Pastoreková",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.101495551951157,
+          48.14671082758012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tomáš Mičko",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.108444385208582,
+          48.1505971377735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zuzka Šebejová",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.099068606057713,
+          48.14762815309408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mária Gačková",
+        "year": "KAN 8 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.11411526381798,
+          48.15088193249948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kika Koscelanská",
+        "year": "KAN 9 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.105714934188185,
+          48.14305636269433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Feri Bartek",
+        "year": "KAN 9 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.113813165720998,
+          48.15331863418802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juraj Petrovič",
+        "year": "KAN 9 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.104012117012918,
+          48.14211575294003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kristína Kottrová",
+        "year": "KAN 9 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.106350853932067,
+          48.151366218947395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kristína Ostatníková",
+        "year": "KAN 10 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.108896160614993,
+          48.14860665592974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viliam Ostatník",
+        "year": "KAN 10 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.105304236347227,
+          48.14988991973574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Andrej Sňahničan",
+        "year": "KAN 10 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.107653053606565,
+          48.14894878069618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Júlia Prílepková",
+        "year": "KAN 10 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10539676628993,
+          48.14181604856778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barbora Urigová",
+        "year": "KAN 10 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.108175729271625,
+          48.14338206096568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Martin Hošala",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1127897235107,
+          48.14707442101463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samo Prílepok",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.104324352938193,
+          48.147762486049814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saška Chovancová",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.104289143037015,
+          48.15031355714857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kika Nociarová",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.101270990996905,
+          48.14333101261746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lydka Jakubjaková",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.108461517119657,
+          48.14258229540219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anežka Sňahničanová",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.099618114547063,
+          48.14684343317977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matej Moško",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.11296193420507,
+          48.14677840032356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samuel Mračka",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.099612112062097,
+          48.15330472142673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mária Nagyová",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10922881024961,
+          48.1461959165133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sára Reháková",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10657883376556,
+          48.152161545420235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jozef Wallenfels",
+        "year": "KAN 11 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10736869751485,
+          48.14236027776302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Patrícia Mošková",
+        "year": "KAN 12 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.109486093209682,
+          48.15310901666705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ján Barčiak",
+        "year": "KAN 12 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10042003810485,
+          48.14335532882009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marián Dzurik",
+        "year": "KAN 12 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.09879743752374,
+          48.149702590250726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Filip Janči",
+        "year": "KAN 12 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.112741919758182,
+          48.15290059734865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oliver Jaroš",
+        "year": "KAN 12 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.107360533661637,
+          48.14598180636759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dávid Lacko",
+        "year": "KAN 12 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.113398992930925,
+          48.15392801598031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dorota Ničíková",
+        "year": "KAN 12 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.115593141457442,
+          48.14973768888122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mária Wallenfelsová",
+        "year": "KAN 12 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.11478904036749,
+          48.14651567098587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Monika Janesová",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.105808345743544,
+          48.14365650848705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sebastián Kaduk",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10339494189349,
+          48.14303243404326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Radovan Marcinčin",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.108664114395687,
+          48.14652811473354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alžbeta Virdzeková",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10242598693009,
+          48.144739674410104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marek Žemla",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10715181916553,
+          48.14140613017326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frederika Beňová",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10105879548074,
+          48.14957018262464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miroslav Kafka",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.11643023682969,
+          48.14838248046608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Slávka Novosadová",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.108829135447458,
+          48.14985863897949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Terézia Švajková",
+        "year": "KAN 13 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.11398716206941,
+          48.14313145392984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavol Vanek",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.11270234568866,
+          48.147745454992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Magdaléna Farkašová",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.103902033984333,
+          48.141684113694225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Martina Chabadová",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.11339006175404,
+          48.15093961149523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dorota Janebová",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10374622313434,
+          48.14280819042898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peter Komoráš",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.100324433058066,
+          48.14901253499922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tobiáš Ľupták",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.110745206388753,
+          48.152038333516856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Martin Novák",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.113233634109204,
+          48.15704816967414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barbora Novosadová",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.10862525322472,
+          48.152000284940286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gorazd Šiškovič",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.103535619500935,
+          48.14928874466836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Júlia Zlúkyová",
+        "year": "KAN 14 ",
+        "place": "Bratislava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.099925229799666,
+          48.14361692304561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samuel Michalec",
+        "year": "KAN 9 ",
+        "place": "Brno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.601064058078077,
+          49.19054046989588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dávid Magušin",
+        "year": "KAN 12 ",
+        "place": "Brno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.61441865581241,
+          49.195055648148156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anna Petrušková",
+        "year": "KAN 14 ",
+        "place": "Brno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.61505281868485,
+          49.201620582342876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dominika Jurášová",
+        "year": "KAN 13 ",
+        "place": "Edinburgh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1883,
+          55.9533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alžbeta Hortová",
+        "year": "KAN 10 ",
+        "place": "Island"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.9426,
+          64.1466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michal Gačko",
+        "year": "KAN 8 ",
+        "place": "Ivanka pri Dunaji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.2589240603311,
+          48.171984006653375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mária Varchola",
+        "year": "KAN 10 ",
+        "place": "Ivanka pri Dunaji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.254795365072358,
+          48.16766906625598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Katka Adamčáková",
+        "year": "KAN 11 ",
+        "place": "Ivanka pri Dunaji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.261238161240232,
+          48.16734060633427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Natália Koyšová",
+        "year": "KAN 14 ",
+        "place": "Ivanka pri Dunaji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.25487176366609,
+          48.171884308918195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sára Dobrovodská",
+        "year": "KAN 10 ",
+        "place": "Jeruzalem"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2137,
+          31.7683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michal Kotrč",
+        "year": "KAN 11 ",
+        "place": "Košice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.254953055653242,
+          48.720429417939975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavol Hric",
+        "year": "KAN 12 ",
+        "place": "Košice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.26839934157701,
+          48.71314900387011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bystrík Repka",
+        "year": "KAN 14 ",
+        "place": "Košice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.257349559200637,
+          48.71607346628137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nina Danišová",
+        "year": "KAN 12 ",
+        "place": "Leuven"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7005,
+          50.8798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Katka Kebis",
+        "year": "KAN 10 ",
+        "place": "Pezinok"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.2669,
+          48.2899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Romana Mária Pastoreková",
+        "year": "KAN 13 ",
+        "place": "Považská Bystrica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.43302928122927,
+          49.12059856893819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Andrej Pastorek",
+        "year": "KAN 13 ",
+        "place": "Považská Bystrica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.432385829141904,
+          49.127637564464486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marianna Páleníková",
+        "year": "KAN 8 ",
+        "place": "Praha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.435538939425925,
+          50.0719038028328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matej Rafael Riško",
+        "year": "KAN 10 ",
+        "place": "Praha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.436719436096316,
+          50.07849703534122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ján Šudák",
+        "year": "KAN 10 ",
+        "place": "Praha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.436586938534973,
+          50.07944868998219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palo Sklenka",
+        "year": "KAN 11 ",
+        "place": "Praha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.441075145949785,
+          50.08178724212619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marie Polášková",
+        "year": "KAN 12 ",
+        "place": "Praha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.43227147512446,
+          50.0740369580737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laura Morjaková",
+        "year": "KAN 8 ",
+        "place": "Prešov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2339,
+          48.997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matúš Hagara",
+        "year": "KAN 9 ",
+        "place": "Rím"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.505336348678261,
+          41.901308287841275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laura Kuniaková",
+        "year": "KAN 10 ",
+        "place": "Rím"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.496461348236133,
+          41.90132533917158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nika Gajdošová",
+        "year": "KAN 9 ",
+        "place": "Šanghaj"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4737,
+          31.2304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lenka Podmajerská",
+        "year": "KAN 10 ",
+        "place": "Trenčín"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.044,
+          48.8945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Štefan Timko",
+        "year": "KAN 8 ",
+        "place": "Trnava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.588,
+          48.3774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Slavomír Gregorík",
+        "year": "KAN 9 ",
+        "place": "Varšava"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0122,
+          52.2297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lukáš Trizuljak",
+        "year": "KAN 11 ",
+        "place": "Viedeň"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.37207981410577,
+          48.21026616447479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Katarína Petrovičová",
+        "year": "KAN 12 ",
+        "place": "Viedeň"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.371690400893446,
+          48.214616581236356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavol Kebis",
+        "year": "KAN 12 ",
+        "place": "Viedeň"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.372380682521836,
+          48.211166079119934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tímea Perignáthová",
+        "year": "KAN 10 ",
+        "place": "Washington DC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0369,
+          38.9072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jakub Kaššák",
+        "year": "KAN 14 ",
+        "place": "Zurich"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5417,
+          47.3769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tomáš Soták",
+        "year": "KAN 13 ",
+        "place": "Zvolen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.129038285782215,
+          48.57925007650517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lukáš Žemla",
+        "year": "KAN 14 ",
+        "place": "Zvolen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.119472603492984,
+          48.57148763032846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marek Jackulík",
+        "year": "KAN 13 ",
+        "place": "Žilina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7394,
+          49.2232
+        ]
+      }
+    }
+  ]
+}
